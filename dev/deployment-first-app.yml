@@ -15,5 +15,6 @@ spec:
       containers:
       - name: test-app
         image: test/0.0.1
+        imagePullPolicy: Never
         ports:
         - containerPort: 8080

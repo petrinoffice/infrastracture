@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-app-dev
+spec:
+  selector:
+    matchLabels:
+      app: test-app-dev
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: test-app-dev
+    spec:
+      containers:
+      - name: test-app-dev
+        image: test/0.0.1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080

@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp-service
+  name: myapp-service-ppe
 spec:
   selector:
-    app: testApp
+    app: test-app-ppe
   ports:
   - port: 8080
     protocol: TCP

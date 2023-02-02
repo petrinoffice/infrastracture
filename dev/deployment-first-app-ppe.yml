@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-app
+  name: test-app-ppe
 spec:
   selector:
     matchLabels:
-      app: test-app
-  replicas: 3
+      app: test-app-ppe
+  replicas: 2
   template:
     metadata:
       labels:
-        app: test-app
+        app: test-app-ppe
     spec:
       containers:
-      - name: test-app
+      - name: test-app-ppe
         image: test/0.0.1
         imagePullPolicy: Never
         ports:

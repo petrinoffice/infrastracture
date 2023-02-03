@@ -1,0 +1,5 @@
+app:
+  name: default-name
+
+service:
+  port: 80

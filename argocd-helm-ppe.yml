@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-helm
+  namespace: argocd
+spec:
+  project: default-ppe
+
+  source:
+    repoURL: 'https://github.com/petrinoffice/infrastracture.git'
+    targetRevision: HEAD
+    path: helm/ppe
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: ppe-helm
+    
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true

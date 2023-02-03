@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 
 metadata:
-  name: dev-app
+  name: dev-app-1
   namespace: argocd
 
 spec:
@@ -18,7 +18,7 @@ spec:
         app:
           name: test-app-helm-dev
           port: 8080
-          image: test/0.0.1
+          image: test/0.0.2
         replicas: 1
 
   destination:

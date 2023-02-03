@@ -1,6 +1,11 @@
 app:
   name: default-name
-  image: test/0.0.1
 
 service:
   port: 80
+
+image:
+  name: test/0.0.1
+  imagePullPolicy: Never
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"

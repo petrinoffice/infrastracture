@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev-helm
+  name: ppe-helm
   namespace: argocd
 spec:
   project: default-ppe

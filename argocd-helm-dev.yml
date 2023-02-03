@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: 'https://github.com/petrinoffice/infrastracture.git'
     targetRevision: HEAD
-    path: helm/test
+    path: helm/dev
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: dev-helm

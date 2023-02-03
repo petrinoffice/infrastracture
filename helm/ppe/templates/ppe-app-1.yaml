@@ -23,7 +23,7 @@ spec:
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev
+    namespace: ppe
 
   syncPolicy:
     syncOptions:

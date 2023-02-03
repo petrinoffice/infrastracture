@@ -18,8 +18,9 @@ spec:
         app:
           name: test-app-helm-ppe-2
           port: 8080
-          image: test/0.0.2
         replicas: 1
+        image: 
+          name: test/0.0.2
 
   destination:
     server: https://kubernetes.default.svc

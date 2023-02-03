@@ -16,7 +16,7 @@ spec:
       parameters:
       values: |-
         app:
-          name: test-app-helm-dev
+          name: test-app-helm-dev-1
           port: 8080
           image: test/0.0.1
         replicas: 1

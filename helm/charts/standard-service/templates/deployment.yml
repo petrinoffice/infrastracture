@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: {{ .Values.app.name }}
-        image: {{ .Value.app.image }}
+        image: "{{ .Value.app.image | default .Chart.AppVersion }}"
         imagePullPolicy: Never
         ports:
         - containerPort: {{ .Values.service.port }}

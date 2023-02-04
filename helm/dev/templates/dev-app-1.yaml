@@ -18,7 +18,7 @@ spec:
         app:
           name: test-app-helm-dev-1
           port: 8080
-        replicas: 1
+        replicas: 3
         image: 
           name: test/0.0.1
 
